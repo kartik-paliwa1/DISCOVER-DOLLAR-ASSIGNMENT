@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   mongo:
     image: mongo:latest
@@ -8,7 +9,7 @@ services:
       - mongo_data:/data/db
 
   backend:
-    build: ./backend
+    image: kartikpaliwal1/mean-backend:latest
     container_name: mean_backend
     restart: always
     ports:
@@ -19,7 +20,7 @@ services:
       - mongo
 
   frontend:
-    build: ./frontend
+    image: kartikpaliwal1/mean-frontend:latest
     container_name: mean_frontend
     restart: always
     depends_on:
