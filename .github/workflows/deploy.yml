@@ -47,10 +47,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /home/ubuntu/app
-          # Update compose file to use your docker hub images if necessary
-          # Or simply ensure docker-compose builds locally or pulls. 
-          # Best practice: Update docker-compose.yml in repo to point to images:
-          # image: ${{ secrets.DOCKER_USERNAME }}/mean-backend:latest
           
           docker-compose down
           docker-compose pull
