@@ -1,5 +1,7 @@
 # Discover Dollar Assignment
 
+## Application accessible on ip: http://13.60.219.136
+
 This repository contains a full-stack MEAN (MongoDB, Express, Angular, Node.js) application that has been containerized using Docker, orchestrated with Docker Compose, and deployed to an AWS EC2 instance via a CI/CD pipeline using GitHub Actions. Nginx is configured as a reverse proxy to serve the application on Port 80.
 
 ## 📂 Project Structure (Folders/Files I have added)
